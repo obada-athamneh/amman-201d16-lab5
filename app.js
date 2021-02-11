@@ -30,10 +30,13 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiply(a, b) {
   //eslint-disable-line
+  let multiply = a * b;
+  return [multiply, 'The product of ' + a + ' and ' + b + ' is ' + multiply +'.']
 }
+console.log(multiply(5, 9));
 
 // Here is the test for multiply(); uncomment it to run it
-// testMultiply(5,9);
+ testMultiply(5, 9);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -51,10 +54,17 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function sumAndMultiply(a, b, c) {
   //eslint-disable-line
+
+   let sumA= sum(sum(a,b),c);
+   let multiplyA = multiply(multiply(a,b),c);
+   let sumAndMultiply = (sumA , multiplyA);
+   
+    return[ sumAndMultiply, 'The sumAndmultiply of ' + a + ' and ' + b + ' and ' + c + ' is ' + sumAndMultiply + '.']
 }
+console.log(sumAndMultiply(4,7,5));
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
-// testSumAndMultiply(4,7,5);
+ testSumAndMultiply(4,7,5);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. Don't forget to create a new branch for your work on the next question!
 
@@ -73,7 +83,11 @@ let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) {
   //eslint-disable-line
+  let sumArray = [a,b,c];
+ sumArr= sum(a,b,c);
+  return [sumArray, 'The sum ' +a+' and '+b +'and'+c+ 'is'+ sumArr ]
 }
+console.log(sumArray(2,3,4));
 
 // Here is the test for sumArray(); uncomment it to run it
 
@@ -94,8 +108,11 @@ Test this function by hand in the console to get it working, and when you think 
 // Write your code here
 function multiplyArray(multArr) {
   //eslint-disable-line
+  let multiplyArray =[a,b,c];
+  d = multiply(a,b,c);
+return [multiply, 'the multiply ' + a+ 'and'+b+'and'+c +'is'+ multiplyArray]
 }
-
+console.log(multiplyArray(2,3,4));
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
 
@@ -122,8 +139,11 @@ let testDynamicArray = [1, 2, 3, 4, 5]; //eslint-disable-line
 
 function multiplyAnyArray(dynamicArray) {
   //eslint-disable-line
+  let testMultiplyAnyArray =[a,b,c,d,e];
+  f = MultiplyAnyArray(a,b,c,d,e);
+return [multiplyAnyArray, 'the multiplyAny Array ' + a+ 'and'+b+'and'+c +'and' +d +'and'+e+'is'+ multiplyAnyArray]
 }
-
+console.log(multiplyAnyArray(1,2,3,4,5));
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyAnyArray(testDynamicArray);
 
